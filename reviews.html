@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пікірлер</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+  <header class="blur-header">
+    <img src="https://png.pngtree.com/png-vector/20200121/ourmid/pngtree-logo-travel-airplane-vector-template-png-image_2132708.jpg" alt="Логотип" class="logo">
+    <div class="hamburger" id="hamburger-menu" style="display:none;">
+      <span style="display:block;width:26px;height:3px;background:#185a9d;margin:6px 0;border-radius:2px;"></span>
+      <span style="display:block;width:26px;height:3px;background:#185a9d;margin:6px 0;border-radius:2px;"></span>
+      <span style="display:block;width:26px;height:3px;background:#185a9d;margin:6px 0;border-radius:2px;"></span>
+    </div>
+    <nav>
+      <a href="index.html" class="nav-link">Басты бет</a>
+      <a href="tours.html" class="nav-link">Турпакет</a>
+      <a href="purchased.html" class="nav-link">Алынған турлар</a>
+      <a href="contact.html" class="nav-link">Бізбен байланыс</a>
+      <a href="reviews.html" class="nav-link special-link active">Пікірлер</a>
+    </nav>
+  </header>
+  <main class="main-content">
+    <section class="reviews-section blur-bg">
+      <h1>Клиент пікірлері</h1>
+      <form id="review-form">
+        <input type="text" name="reviewer" placeholder="Атыңыз" required>
+        <textarea name="review" placeholder="Пікіріңіз" required></textarea>
+        <button type="submit" class="cta-btn">Пікір қалдыру</button>
+      </form>
+      <div id="reviews-list"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Туристік жолдамалар қосымшасы.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

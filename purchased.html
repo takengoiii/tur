@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Алынған турлар</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+  <header class="blur-header">
+    <nav>
+      <img src="images/logo.png" alt="Логотип" class="logo">
+      <a href="index.html" class="nav-link">Басты бет</a>
+      <a href="tours.html" class="nav-link">Турпакет</a>
+      <a href="purchased.html" class="nav-link active">Алынған турлар</a>
+      <a href="contact.html" class="nav-link">Бізбен байланыс</a>
+      <a href="reviews.html" class="nav-link special-link">Пікірлер</a>
+    </nav>
+  </header>
+  <main class="main-content">
+    <section class="purchased-list blur-bg">
+      <h1>Сіздің алынған турларыңыз</h1>
+      <div style="overflow-x:auto;">
+        <table id="purchased-table" class="purchased-table blur-bg">
+          <thead>
+            <tr>
+              <th>Сурет</th>
+              <th>Тур атауы</th>
+              <th>Сипаттама</th>
+              <th>Аты-жөні</th>
+              <th>Телефон</th>
+              <th>Пошта</th>
+              <th>Сұраныс</th>
+              <th>Уақыты</th>
+            </tr>
+          </thead>
+          <tbody id="purchased-tours"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Туристік жолдамалар қосымшасы.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

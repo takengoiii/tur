@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Турпакеттер</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+  <header class="blur-header">
+    <img src="https://png.pngtree.com/png-vector/20200121/ourmid/pngtree-logo-travel-airplane-vector-template-png-image_2132708.jpg" alt="Логотип" class="logo">
+    <div class="hamburger" id="hamburger-menu" style="display:none;">
+      <span style="display:block;width:26px;height:3px;background:#185a9d;margin:6px 0;border-radius:2px;"></span>
+      <span style="display:block;width:26px;height:3px;background:#185a9d;margin:6px 0;border-radius:2px;"></span>
+      <span style="display:block;width:26px;height:3px;background:#185a9d;margin:6px 0;border-radius:2px;"></span>
+    </div>
+    <nav>
+      <a href="index.html" class="nav-link">Басты бет</a>
+      <a href="tours.html" class="nav-link active">Турпакет</a>
+      <a href="purchased.html" class="nav-link">Алынған турлар</a>
+      <a href="contact.html" class="nav-link">Бізбен байланыс</a>
+      <a href="reviews.html" class="nav-link special-link">Пікірлер</a>
+    </nav>
+  </header>
+  <main class="main-content">
+    <section class="tour-list blur-bg">
+      <h1 class="main-title animated-title">Турпакеттер</h1>
+      <div class="tours-cards">
+        <div class="tour-card gradient-bg">
+          <img class="tour-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Алматы Шымбұлақ">
+          <img class="tour-icon" src="https://cdn-icons-png.flaticon.com/512/197/197484.png" alt="Алматы">
+          <h2>Алматы - Шымбұлақ</h2>
+          <p>3 күн, 2 түн. Бағасы: 120 000 ₸</p>
+          <button class="details-btn" data-tour="almaty">Толығырақ</button>
+        </div>
+        <div class="tour-card gradient-bg">
+          <img class="tour-img" src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Астана Бурабай">
+          <img class="tour-icon" src="https://cdn-icons-png.flaticon.com/512/197/197570.png" alt="Астана">
+          <h2>Астана - Бурабай</h2>
+          <p>2 күн, 1 түн. Бағасы: 90 000 ₸</p>
+          <button class="details-btn" data-tour="astana">Толығырақ</button>
+        </div>
+        <div class="tour-card gradient-bg">
+          <img class="tour-img" src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=600&q=80" alt="Түркістан Ясауи">
+          <img class="tour-icon" src="https://cdn-icons-png.flaticon.com/512/197/197408.png" alt="Түркістан">
+          <h2>Түркістан - Қожа Ахмет Ясауи</h2>
+          <p>1 күндік тур. Бағасы: 50 000 ₸</p>
+          <button class="details-btn" data-tour="turkistan">Толығырақ</button>
+        </div>
+        <div class="tour-card gradient-bg">
+          <img class="tour-img" src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=600&q=80" alt="Дубай">
+          <img class="tour-icon" src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="Дубай">
+          <h2>Дубай - City Tour</h2>
+          <p>4 күн, 3 түн. Бағасы: 250 000 ₸</p>
+          <button class="details-btn" data-tour="dubai">Толығырақ</button>
+        </div>
+        <div class="tour-card gradient-bg">
+          <img class="tour-img" src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=600&q=80" alt="Ыстамбұл">
+          <img class="tour-icon" src="https://cdn-icons-png.flaticon.com/512/197/197419.png" alt="Ыстамбұл">
+          <h2>Ыстамбұл - Босфор</h2>
+          <p>5 күн, 4 түн. Бағасы: 270 000 ₸</p>
+          <button class="details-btn" data-tour="istanbul">Толығырақ</button>
+        </div>
+        <div class="tour-card gradient-bg">
+          <img class="tour-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Анталия">
+          <img class="tour-icon" src="https://cdn-icons-png.flaticon.com/512/197/197518.png" alt="Анталия">
+          <h2>Анталия - Демалыс</h2>
+          <p>7 күн, 6 түн. Бағасы: 320 000 ₸</p>
+          <button class="details-btn" data-tour="antalya">Толығырақ</button>
+        </div>
+        <div class="tour-card gradient-bg">
+          <img class="tour-img" src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=600&q=80" alt="Прага">
+          <img class="tour-icon" src="https://cdn-icons-png.flaticon.com/512/197/197591.png" alt="Прага">
+          <h2>Прага - Еуропа туры</h2>
+          <p>6 күн, 5 түн. Бағасы: 500 000 ₸</p>
+          <button class="details-btn" data-tour="prague">Толығырақ</button>
+        </div>
+        <div class="tour-card gradient-bg">
+          <img class="tour-img" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80" alt="Египет">
+          <img class="tour-icon" src="https://cdn-icons-png.flaticon.com/512/197/197422.png" alt="Египет">
+          <h2>Шарм-эль-Шейх - Египет</h2>
+          <p>5 күн, 4 түн. Бағасы: 350 000 ₸</p>
+          <button class="details-btn" data-tour="egypt">Толығырақ</button>
+        </div>
+        <div class="tour-card gradient-bg">
+          <img class="tour-img" src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80" alt="Бали">
+          <img class="tour-icon" src="https://cdn-icons-png.flaticon.com/512/197/197507.png" alt="Бали">
+          <h2>Бали - Индонезия</h2>
+          <p>8 күн, 7 түн. Бағасы: 900 000 ₸</p>
+          <button class="details-btn" data-tour="bali">Толығырақ</button>
+        </div>
+        <div class="tour-card gradient-bg">
+          <img class="tour-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Мальдив">
+          <img class="tour-icon" src="https://cdn-icons-png.flaticon.com/512/197/197386.png" alt="Мальдив">
+          <h2>Мальдив - Luxury</h2>
+          <p>7 күн, 6 түн. Бағасы: 1 200 000 ₸</p>
+          <button class="details-btn" data-tour="maldives">Толығырақ</button>
+        </div>
+      </div>
+    </section>
+    <!-- Тур мәліметін енгізу модаль терезесі -->
+    <div id="tour-modal" class="modal-bg" style="display:none;">
+      <div class="modal-content blur-bg">
+        <span class="modal-close">&times;</span>
+        <h2 id="modal-tour-title"></h2>
+        <form id="tour-info-form">
+          <input type="text" name="name" placeholder="Аты-жөніңіз" required>
+          <input type="tel" name="phone" placeholder="Телефон" required>
+          <input type="email" name="email" placeholder="Пошта" required>
+          <textarea name="comment" placeholder="Қосымша сұраныс"></textarea>
+          <button type="submit" class="cta-btn">Турды алу</button>
+        </form>
+        <div id="modal-success" class="success-message"></div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Туристік жолдамалар қосымшасы.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
